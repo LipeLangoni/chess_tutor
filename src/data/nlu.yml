@@ -1,0 +1,511 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - oi
+    - olá
+    - bom dia
+    - boa noite
+    - moin
+    - ei
+    - vamos lá
+    - ei, cara
+    - bom dia
+    - boa noite
+    - boa tarde
+     - e aí
+    - e aí, tudo bem?
+    - opa
+    - oi, amigo
+    - oi, pessoal
+    - olá, galera
+    - bom dia, como vai?
+    - boa noite, como está?
+    - salve
+    - beleza
+    - como vai?
+    - tudo certo?
+    - prazer em te ver
+    - bom te encontrar aqui
+    - que bom te ver
+    - fala
+    - fala, mano
+    - fala, cara
+    - fala, véi
+
+- intent: goodbye
+  examples: |
+    - tchau
+    - adeus
+    - até logo
+    - boa noite
+    - tenha um bom dia
+    - nos vemos por aí
+    - tchau tchau
+    - até mais tarde
+
+- intent: affirm
+  examples: |
+    - sim
+    - s
+    - realmente
+    - claro
+    - isso parece bom
+    - correto
+    - exato
+    - isso
+
+- intent: deny
+  examples: |
+    - não
+    - n
+    - nunca
+    - eu não acho isso
+    - não gosto disso
+    - de jeito nenhum
+    - não realmente
+    - nada a ver
+    - discordo
+
+- intent: mood_great
+  examples: |
+    - perfeito
+    - ótimo
+    - incrível
+    - me sentindo como um rei
+    - maravilhoso
+    - estou me sentindo muito bem
+    - estou ótimo
+    - estou incrível
+    - vou salvar o mundo
+    - super animado
+    - extremamente bom
+    - tão perfeito
+    - tão bom
+    - tão perfeito
+    - adorei
+    - amei
+    - estou feliz
+    - estou bem
+
+- intent: mood_unhappy
+  examples: |
+    - meu dia foi horrível
+    - estou triste
+    - não me sinto muito bem
+    - estou desapontado
+    - super triste
+    - estou tão triste
+    - triste
+    - muito triste
+    - infeliz
+    - não é bom
+    - não muito bom
+    - extremamente triste
+    - tão triste
+
+- intent: bot_challenge
+  examples: |
+    - você é um robô?
+    - você é um humano?
+    - estou falando com um robô?
+    - estou falando com um humano?
+
+- intent: chess_starting_pieces
+  examples: |
+    - Quantas peças cada jogador começa no xadrez?
+    - Quantas peças cada jogador tem no início do jogo de xadrez?
+    - No início do jogo de xadrez, quantas peças cada jogador possui?
+    - No xadrez, quantas peças são distribuídas para cada jogador no começo?
+    - Qual é o número de peças iniciais de cada jogador no xadrez?
+
+- intent: chess_most_important_piece
+  examples: |
+    - Como se chama a peça mais importante do jogo?
+    - Qual é a peça mais importante no xadrez?
+    - No xadrez, qual é a designação da peça mais crucial?
+    - Qual é a peça de maior importância no jogo de xadrez?
+    - Qual é o nome da peça mais valiosa no xadrez?
+
+- intent: chess_pawn_moves
+  examples: |
+    - Quais são os movimentos básicos do peão?
+    - Como o peão se move no tabuleiro?
+    - Quais são as jogadas possíveis para o peão no xadrez?
+    - Explique os movimentos elementares do peão no jogo de xadrez.
+    - Quais são as opções de movimento disponíveis para o peão no xadrez?
+
+- intent: chess_rook_moves
+  examples: |
+    - Quantas casas a torre pode se mover em uma única jogada?
+    - Qual é o alcance de movimento da torre?
+    - Até quantas casas a torre pode se deslocar de uma vez?
+    - Quais são os limites de movimento da torre no xadrez?
+    - Explique as possibilidades de movimento da torre no jogo de xadrez.
+
+- intent: chess_bishop_moves
+  examples: |
+    - Como o bispo se move no tabuleiro?
+    - Quais são os movimentos do bispo no xadrez?
+    - Quais são as jogadas permitidas para o bispo no jogo de xadrez?
+    - Explique as opções de movimento disponíveis para o bispo no xadrez.
+    - Quais são as regras de movimento específicas do bispo no xadrez?
+
+- intent: chess_knight_moves
+  examples: |
+    - Quais são os movimentos do cavalo?
+    - Como o cavalo se move no xadrez?
+    - Explique as jogadas possíveis para o cavalo no jogo de xadrez.
+    - Quais são as opções de movimento exclusivas do cavalo no xadrez?
+    - Descreva as regras de movimento peculiares do cavalo no xadrez.
+
+- intent: chess_castling
+  examples: |
+    - O que é o roque?
+    - Como funciona o roque no xadrez?
+    - Explique a manobra do roque no jogo de xadrez.
+    - Quais são as regras e os procedimentos do roque no xadrez?
+    - Descreva a técnica de roque e suas implicações no xadrez.
+
+- intent: chess_castling_conditions
+  examples: |
+    - Quais são as condições para realizar o roque?
+    - Em que situações o roque pode ser feito no xadrez?
+    - Explique os requisitos necessários para executar o roque no xadrez.
+    - Quais são as restrições que determinam a viabilidade do roque no xadrez?
+    - Descreva as circunstâncias que devem ser atendidas para realizar o roque no xadrez.
+    - Como fazer o roque?
+
+- intent: chess_king_moves
+  examples: |
+    - Como o rei se move?
+    - Quais são os movimentos possíveis do rei no xadrez?
+    - Explique as opções de movimento disponíveis para o rei no jogo de xadrez.
+    - Quais são as restrições e os alcances de movimento do rei no xadrez?
+    - Descreva as regras de movimento do rei e sua importância no xadrez.
+
+- intent: chess_check
+  examples: |
+    - O que é xeque?
+    - Como ocorre o xeque no xadrez?
+    - Explique o conceito de xeque no jogo de xadrez.
+    - Quais são as circunstâncias em que um rei está em xeque no xadrez?
+    - Descreva as situações em que o rei de um jogador está ameaçado de xeque no xadrez.
+
+
+- intent: chess_escape_check
+  examples: |
+    - Como um jogador pode escapar de um xeque?
+    - Quais são as formas de escapar de um xeque no xadrez?
+    - Explique as estratégias disponíveis para evitar um xeque no jogo de xadrez.
+    - Quais são as opções e as táticas para defender o rei de um xeque no xadrez?
+    - Descreva as medidas que um jogador pode tomar para se proteger de um xeque no xadrez.
+
+
+- intent: chess_checkmate
+  examples: |
+    - O que é xeque-mate?
+    - Como ocorre o xeque-mate no xadrez?
+    - Explique o conceito de xeque-mate e suas implicações no jogo de xadrez.
+    - Quais são as condições que levam a um xeque-mate no xadrez?
+    - Descreva as situações em que um rei está em xeque-mate e o jogo termina no xadrez.
+
+
+- intent: chess_number_of_players
+  examples: |
+    - Quantos jogadores participam de uma partida de xadrez?
+    - Em uma partida de xadrez, quantos jogadores estão envolvidos?
+    - No jogo de xadrez, quantas pessoas estão jogando em uma partida?
+    - O xadrez é jogado por quantos jogadores?
+    - Qual é o número de participantes em um jogo de xadrez?
+
+- intent: chess_draw
+  examples: |
+    - Como o empate pode ocorrer em uma partida de xadrez?
+    - Quais são as formas de empate no xadrez?
+    - Explique as condições em que uma partida de xadrez pode terminar em empate.
+    - Quais são as possibilidades de um jogo de xadrez terminar em empate?
+    - Descreva as situações em que um empate pode ser declarado no xadrez.
+    - Como ocorre o empate?
+
+- intent: chess_pawn_promotion
+  examples: |
+    - O que é promoção de peão?
+    - Como funciona a promoção de peão no xadrez?
+    - Explique o conceito de promoção de peão no jogo de xadrez.
+    - Quais são as condições e as consequências da promoção de peão no xadrez?
+    - Descreva o processo pelo qual um peão pode ser promovido em uma peça mais poderosa no xadrez.
+    - O que acontece se o peão chegar ao final do tabuleiro?
+    - Como o peão pode se transformar em dama?
+    - Como o peão vira rainha?
+    - Como o peão se torna dama?
+
+
+- intent: chess_movement_rules
+  examples: |
+    - Quais são as principais regras de movimento no xadrez?
+    - Como funcionam as regras de movimento no xadrez?
+    - Quais são as restrições e os padrões de movimento que se aplicam às peças no xadrez?
+    - Descreva as diretrizes gerais para movimentar as peças no xadrez.
+    - Quais são as bases do movimento das peças no jogo de xadrez?
+
+- intent: chess_most_powerful_piece_value
+  examples: |
+    - Qual é o valor da peça mais poderosa no xadrez?
+    - Quanto vale a peça mais forte no xadrez?
+    - Qual é o valor atribuído à peça mais poderosa no xadrez?
+    - Quais são as características e o significado do valor da peça mais poderosa no xadrez?
+    - Descreva a importância e a avaliação da peça mais forte no xadrez.
+    - Qual peça é a mais valiosa?
+    - Quanto vale a dama no xadrez?
+    - Quanto a rainha vale?
+
+
+- intent: chess_pawn_value
+  examples: |
+    - Quanto vale um peão no xadrez?
+    - Qual é o valor de um peão no xadrez?
+    - Quanto o peão vale?
+    - O peão vale quanto?
+
+- intent: chess_knight_value
+  examples: |
+    - Qual é o valor de um cavalo no xadrez?
+    - Quanto vale um cavalo no xadrez?
+    - Quanto o cavalo vale?
+    - O Cavalo vale quanto?
+
+
+- intent: chess_rook_value
+  examples: |
+    - Quanto vale uma torre no xadrez?
+    - Qual é o valor de uma torre no xadrez?
+    - Quanto a torre vale?
+    - A torre vale quanto?
+
+- intent: chess_bishop_value
+  examples: |
+    - Qual é o valor de um bispo no xadrez?
+    - Quanto vale um bispo no xadrez?
+    - QUanto o bispo vale?
+    - O Bispo vale quanto?
+
+- intent: chess_king_value
+  examples: |
+    - Qual é o valor de um rei no xadrez?
+    - Quanto vale um rei no xadrez?
+    - Quanto o rei vale?
+    - O rei vale quanto?
+
+- intent: chess_piece_values_impact
+  examples: |
+    - Como os valores das peças afetam as trocas no xadrez?
+    - Qual é o impacto dos valores das peças nas trocas no xadrez?
+    - Explique como as pontuações das peças influenciam as negociações no jogo de xadrez.
+    - Quais são as considerações estratégicas relacionadas aos valores das peças nas trocas do xadrez?
+    - Descreva a importância e as implicações das avaliações das peças nas interações entre os jogadores no xadrez.
+
+
+- intent: chess_piece_sacrifice
+  examples: |
+    - Existem situações em que um jogador pode sacrificar uma peça de valor maior?
+    - É possível sacrificar uma peça de valor alto em certas situações?
+    - Explique as circunstâncias em que um jogador pode abrir mão de uma peça de maior valor no jogo de xadrez.
+    - Quais são as estratégias e os motivos por trás do sacrifício de peças mais valiosas no xadrez?
+    - Descreva as táticas e as considerações associadas ao sacrifício de peças valiosas no xadrez.
+    - O que é sacrificio?
+    - Posso sacrificar peças no xadrez?
+    - Posso trocar uma peça de maior valor por uma de menor?
+    - Posso trocar uma peça mais valiosa por uma menos?
+    - Posso trocar uma peça mais forte por uma mais fraca?
+
+
+- intent: chess_piece_values_variation
+  examples: |
+    - Os valores das peças são fixos ou podem variar durante o jogo?
+    - Podem ocorrer variações nos valores das peças durante uma partida de xadrez?
+    - Explique se os valores das peças no xadrez são estáticos ou se podem ser alterados durante a partida.
+    - Quais são os fatores que podem levar a uma variação nos valores das peças ao longo do jogo de xadrez?
+    - Descreva se os valores atribuídos às peças podem flutuar ou ser influenciados por diferentes situações no xadrez.
+
+- intent: chess_opening_objective
+  examples: |
+    - Qual é o objetivo principal da abertura no xadrez?
+    - O que se busca na abertura do jogo de xadrez?
+    - Por que a abertura é importante no xadrez?
+
+- intent: chess_piece_development_importance
+  examples: |
+    - Por que é importante desenvolver as peças no início do jogo?
+    - Qual é o benefício de desenvolver as peças no começo do jogo?
+    - O que acontece se não desenvolvermos as peças no xadrez?
+
+- intent: chess_board_center_control
+  examples: |
+    - O que significa controlar o centro do tabuleiro?
+    - Por que é estrategicamente vantajoso controlar o centro do tabuleiro?
+    - Quais são as vantagens de dominar o centro do tabuleiro no xadrez?
+
+- intent: chess_piece_development_principles
+  examples: |
+    - Quais são os princípios básicos de desenvolvimento das peças?
+    - O que devo considerar ao desenvolver minhas peças no xadrez?
+    - Como posso melhorar o desenvolvimento das minhas peças?
+
+- intent: chess_center_principle
+  examples: |
+    - O que é o princípio do centro no xadrez?
+    - Por que o centro é tão importante no xadrez?
+    - Quais são as vantagens de seguir o princípio do centro no jogo de xadrez?
+
+- intent: chess_king_protection_importance
+  examples: |
+    - Qual é a importância de proteger o rei no xadrez?
+    - Por que devo cuidar da segurança do meu rei durante a partida?
+    - O que pode acontecer se eu não proteger meu rei adequadamente?
+
+- intent: chess_gambit_definition
+  examples: |
+    - O que é um gambito no xadrez?
+    - Quais são os gambitos mais conhecidos no jogo de xadrez?
+    - Como funciona um gambito e quais são seus objetivos?
+
+- intent: chess_board_space_control_benefits
+  examples: |
+    - Quais são os benefícios de controlar o espaço no tabuleiro de xadrez?
+    - Por que é importante ter controle sobre o espaço no xadrez?
+    - Quais são as vantagens estratégicas de dominar mais espaço no tabuleiro?
+
+- intent: chess_threatening_moves_importance
+  examples: |
+    - Por que é importante fazer movimentos ameaçadores no xadrez?
+    - Quais são os benefícios de criar ameaças durante o jogo de xadrez?
+    - Como os movimentos ameaçadores podem influenciar a partida?
+
+- intent: chess_piece_activity_principle
+  examples: |
+    - O que é o princípio da atividade das peças no xadrez?
+    - Por que a atividade das peças é importante no jogo de xadrez?
+    - Como posso maximizar a atividade das minhas peças no tabuleiro?
+
+- intent: chess_exchange_definition
+  examples: |
+    - O que é uma troca no xadrez?
+    - Como funciona uma troca de peças no jogo de xadrez?
+    - Quais são os objetivos de uma troca no xadrez?
+
+- intent: chess_castling_benefits
+  examples: |
+    - Quais são os benefícios de realizar um roque no xadrez?
+    - Por que o roque é uma jogada estratégica no jogo de xadrez?
+    - Como o roque pode ajudar na segurança do rei e no desenvolvimento das peças?
+
+- intent: chess_avoiding_wasted_moves
+  examples: |
+    - Por que é importante evitar movimentos desperdiçados no xadrez?
+    - Quais são os problemas de fazer movimentos sem propósito no jogo de xadrez?
+    - Como posso evitar movimentos inúteis e maximizar minha eficiência no jogo?
+
+- intent: chess_tactical_sacrifice_definition
+  examples: |
+    - O que é um sacrifício tático no xadrez?
+    - Como funcionam os sacrifícios táticos no jogo de xadrez?
+    - Quais são os objetivos e benefícios de um sacrifício tático?
+
+- intent: chess_double_threat_benefits
+  examples: |
+    - Quais são os benefícios de criar ameaças duplas no xadrez?
+    - Por que as ameaças duplas são jogadas poderosas no jogo de xadrez?
+    - Como posso aproveitar as oportunidades de criar ameaças duplas?
+
+- intent: chess_weakness_target_definition
+  examples: |
+    - O que é um alvo fraco no xadrez?
+    - Como identificar e explorar os pontos fracos no jogo de xadrez?
+    - Quais são as estratégias para tirar vantagem de um alvo fraco?
+
+- intent: chess_game_planning_importance
+  examples: |
+    - Por que é importante ter um plano de jogo no xadrez?
+    - Como um plano de jogo pode influenciar minha estratégia no xadrez?
+    - Quais são os benefícios de planejar minhas jogadas antecipadamente?
+
+- intent: chess_endgame_definition
+  examples: |
+    - O que é o final do jogo no xadrez?
+    - Como o final do jogo difere das outras fases do xadrez?
+    - Quais são as principais estratégias no final do jogo?
+
+- intent: chess_basic_pawn_endgame_ideas
+  examples: |
+    - Quais são as ideias básicas de um final de peões no xadrez?
+    - Como devo abordar os finais de peões no jogo de xadrez?
+    - Quais são as estratégias-chave no final de peões?
+
+- intent: chess_en_passant_definition
+  examples: |
+    - O que é o mate em passant no xadrez?
+    - Como ocorre o mate em passant e quais são suas regras?
+    - Quais são as situações em que o mate em passant pode ocorrer?
+
+- intent: chess_position_evaluation_importance
+  examples: |
+    - Qual é a importância de avaliar a posição no xadrez?
+    - Como a avaliação da posição pode influenciar minhas decisões no jogo?
+    - Quais são os principais fatores a serem considerados ao avaliar uma posição no xadrez?
+
+- intent: chess_pawn_structure_definition
+  examples: |
+    - O que é uma estrutura de peões no xadrez?
+    - Como as estruturas de peões podem afetar o jogo de xadrez?
+    - Quais são as características das diferentes estruturas de peões?
+
+- intent: chess_unequal_pawn_structure_strategies
+  examples: |
+    - Quais são as estratégias comuns para lidar com uma estrutura de peões desigual no xadrez?
+    - Como posso aproveitar ou compensar uma estrutura de peões desfavorável?
+    - Quais são as opções estratégicas quando enfrento uma estrutura de peões desigual?
+
+- intent: chess_trap_definition
+  examples: |
+    - O que é uma clavada no xadrez?
+    - Como funciona uma clavada e quais são seus objetivos?
+    - Quais são os tipos comuns de clavadas no jogo de xadrez?
+
+- intent: chess_basic_rook_endgame_ideas
+  examples: |
+    - Quais são as ideias básicas de um final de torre no xadrez?
+    - Como abordar os finais de torre no jogo de xadrez?
+    - Quais são as estratégias fundamentais no final de torre?
+
+- intent: chess_attack_plan_definition
+  examples: |
+    - O que é um plano de ataque no xadrez?
+    - Como elaborar um plano de ataque efetivo no jogo de xadrez?
+    - Quais são os elementos-chave de um plano de ataque bem-sucedido?
+
+- intent: chess_defense_plan_definition
+  examples: |
+    - O que é um plano de defesa no xadrez?
+    - Como criar um plano de defesa sólido no jogo de xadrez?
+    - Quais são as estratégias para se defender de ataques no xadrez?
+
+- intent: chess_common_attack_techniques
+  examples: |
+    - Quais são as técnicas de ataque mais comuns no xadrez?
+    - Como posso lançar ataques efetivos no jogo de xadrez?
+    - Quais são os padrões de ataque e táticas a serem lembrados?
+
+- intent: chess_passed_pawn_definition
+  examples: |
+    - O que é um peão passado no xadrez?
+    - Quais são as características e vantagens de um peão passado?
+    - Como posso aproveitar um peão passado em uma partida de xadrez?
+
+- intent: chess_common_opening_strategies
+  examples: |
+    - Quais são as estratégias de abertura comuns no xadrez?
+    - Como posso começar bem uma partida de xadrez usando estratégias de abertura?
+    - Quais são os princípios-chave das aberturas no xadrez?
+    

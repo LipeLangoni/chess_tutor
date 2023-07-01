@@ -1,0 +1,312 @@
+version: "3.1"
+
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: affirm
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- story: deny
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- story: mood_great
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+
+- story: mood_unhappy
+  steps:
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- story: bot_challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- story: chess_starting_pieces
+  steps:
+  - intent: chess_starting_pieces
+  - action: utter_chess_starting_pieces
+
+- story: chess_most_important_piece
+  steps:
+  - intent: chess_most_important_piece
+  - action: utter_chess_most_important_piece
+
+- story: chess_pawn_moves
+  steps:
+  - intent: chess_pawn_moves
+  - action: utter_chess_pawn_moves
+
+- story: chess_rook_moves
+  steps:
+  - intent: chess_rook_moves
+  - action: utter_chess_rook_moves
+
+- story: chess_bishop_moves
+  steps:
+  - intent: chess_bishop_moves
+  - action: utter_chess_bishop_moves
+
+- story: chess_knight_moves
+  steps:
+  - intent: chess_knight_moves
+  - action: utter_chess_knight_moves
+
+- story: chess_castling
+  steps:
+  - intent: chess_castling
+  - action: utter_chess_castling
+
+- story: chess_castling_conditions
+  steps:
+  - intent: chess_castling_conditions
+  - action: utter_chess_castling_conditions
+
+- story: chess_king_moves
+  steps:
+  - intent: chess_king_moves
+  - action: utter_chess_king_moves
+
+- story: chess_check
+  steps:
+  - intent: chess_check
+  - action: utter_chess_check
+
+- story: chess_escape_check
+  steps:
+  - intent: chess_escape_check
+  - action: utter_chess_escape_check
+
+- story: chess_checkmate
+  steps:
+  - intent: chess_checkmate
+  - action: utter_chess_checkmate
+
+- story: chess_number_of_players
+  steps:
+  - intent: chess_number_of_players
+  - action: utter_chess_number_of_players
+
+- story: chess_draw
+  steps:
+  - intent: chess_draw
+  - action: utter_chess_draw
+
+- story: chess_pawn_promotion
+  steps:
+  - intent: chess_pawn_promotion
+  - action: utter_chess_pawn_promotion
+
+- story: chess_movement_rules
+  steps:
+  - intent: chess_movement_rules
+  - action: utter_chess_movement_rules
+
+- story: chess_most_powerful_piece_value
+  steps:
+  - intent: chess_most_powerful_piece_value
+  - action: utter_chess_most_powerful_piece_value
+
+- story: chess_pawn_value
+  steps:
+  - intent: chess_pawn_value
+  - action: utter_chess_pawn_value
+
+- story: chess_knight_value
+  steps:
+  - intent: chess_knight_value
+  - action: utter_chess_knight_value
+
+- story: chess_rook_value
+  steps:
+  - intent: chess_rook_value
+  - action: utter_chess_rook_value
+
+- story: chess_bishop_value
+  steps:
+  - intent: chess_bishop_value
+  - action: utter_chess_bishop_value
+
+- story: chess_king_value
+  steps:
+  - intent: chess_king_value
+  - action: utter_chess_king_value
+
+- story: chess_piece_values_impact
+  steps:
+  - intent: chess_piece_values_impact
+  - action: utter_chess_piece_values_impact
+
+- story: chess_piece_sacrifice
+  steps:
+  - intent: chess_piece_sacrifice
+  - action: utter_chess_piece_sacrifice
+
+- story: chess_piece_values_variation
+  steps:
+  - intent: chess_piece_values_variation
+  - action: utter_chess_piece_values_variation
+
+- story: chess_opening_objective
+  steps:
+  - intent: chess_opening_objective
+  - action: utter_chess_opening_objective
+
+- story: chess_piece_development_importance
+  steps:
+  - intent: chess_piece_development_importance
+  - action: utter_chess_piece_development_importance
+
+- story: chess_board_center_control
+  steps:
+  - intent: chess_board_center_control
+  - action: utter_chess_board_center_control
+
+- story: chess_piece_development_principles
+  steps:
+  - intent: chess_piece_development_principles
+  - action: utter_chess_piece_development_principles
+
+- story: chess_center_principle
+  steps:
+  - intent: chess_center_principle
+  - action: utter_chess_center_principle
+
+- story: chess_king_protection_importance
+  steps:
+  - intent: chess_king_protection_importance
+  - action: utter_chess_king_protection_importance
+
+- story: chess_gambit_definition
+  steps:
+  - intent: chess_gambit_definition
+  - action: utter_chess_gambit_definition
+
+- story: chess_board_space_control_benefits
+  steps:
+  - intent: chess_board_space_control_benefits
+  - action: utter_chess_board_space_control_benefits
+
+- story: chess_threatening_moves_importance
+  steps:
+  - intent: chess_threatening_moves_importance
+  - action: utter_chess_threatening_moves_importance
+
+- story: chess_piece_activity_principle
+  steps:
+  - intent: chess_piece_activity_principle
+  - action: utter_chess_piece_activity_principle
+
+- story: chess_exchange_definition
+  steps:
+  - intent: chess_exchange_definition
+  - action: utter_chess_exchange_definition
+
+- story: chess_castling_benefits
+  steps:
+  - intent: chess_castling_benefits
+  - action: utter_chess_castling_benefits
+
+- story: chess_avoiding_wasted_moves
+  steps:
+  - intent: chess_avoiding_wasted_moves
+  - action: utter_chess_avoiding_wasted_moves
+
+- story: chess_tactical_sacrifice_definition
+  steps:
+  - intent: chess_tactical_sacrifice_definition
+  - action: utter_chess_tactical_sacrifice_definition
+
+- story: chess_double_threat_benefits
+  steps:
+  - intent: chess_double_threat_benefits
+  - action: utter_chess_double_threat_benefits
+
+- story: chess_weakness_target_definition
+  steps:
+  - intent: chess_weakness_target_definition
+  - action: utter_chess_weakness_target_definition
+
+- story: chess_game_planning_importance
+  steps:
+  - intent: chess_game_planning_importance
+  - action: utter_chess_game_planning_importance
+
+- story: chess_endgame_definition
+  steps:
+  - intent: chess_endgame_definition
+  - action: utter_chess_endgame_definition
+
+- story: chess_basic_pawn_endgame_ideas
+  steps:
+  - intent: chess_basic_pawn_endgame_ideas
+  - action: utter_chess_basic_pawn_endgame_ideas
+
+- story: chess_en_passant_definition
+  steps:
+  - intent: chess_en_passant_definition
+  - action: utter_chess_en_passant_definition
+
+- story: chess_position_evaluation_importance
+  steps:
+  - intent: chess_position_evaluation_importance
+  - action: utter_chess_position_evaluation_importance
+
+- story: chess_pawn_structure_definition
+  steps:
+  - intent: chess_pawn_structure_definition
+  - action: utter_chess_pawn_structure_definition
+
+- story: chess_unequal_pawn_structure_strategies
+  steps:
+  - intent: chess_unequal_pawn_structure_strategies
+  - action: utter_chess_unequal_pawn_structure_strategies
+
+- story: chess_trap_definition
+  steps:
+  - intent: chess_trap_definition
+  - action: utter_chess_trap_definition
+
+- story: chess_basic_rook_endgame_ideas
+  steps:
+  - intent: chess_basic_rook_endgame_ideas
+  - action: utter_chess_basic_rook_endgame_ideas
+
+- story: chess_attack_plan_definition
+  steps:
+  - intent: chess_attack_plan_definition
+  - action: utter_chess_attack_plan_definition
+
+- story: chess_defense_plan_definition
+  steps:
+  - intent: chess_defense_plan_definition
+  - action: utter_chess_defense_plan_definition
+
+- story: chess_common_attack_techniques
+  steps:
+  - intent: chess_common_attack_techniques
+  - action: utter_chess_common_attack_techniques
+
+- story: chess_passed_pawn_definition
+  steps:
+  - intent: chess_passed_pawn_definition
+  - action: utter_chess_passed_pawn_definition
+
+- story: chess_common_opening_strategies
+  steps:
+  - intent: chess_common_opening_strategies
+  - action: utter_chess_common_opening_strategies

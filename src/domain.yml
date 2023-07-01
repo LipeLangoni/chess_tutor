@@ -1,0 +1,253 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - chess_starting_pieces
+  - chess_most_important_piece
+  - chess_pawn_moves
+  - chess_rook_moves
+  - chess_bishop_moves
+  - chess_knight_moves
+  - chess_castling
+  - chess_castling_conditions
+  - chess_king_moves
+  - chess_check
+  - chess_escape_check
+  - chess_checkmate
+  - chess_number_of_players
+  - chess_draw
+  - chess_pawn_promotion
+  - chess_movement_rules
+  - chess_most_powerful_piece_value
+  - chess_pawn_value
+  - chess_knight_value
+  - chess_rook_value
+  - chess_bishop_value
+  - chess_king_value
+  - chess_piece_values_impact
+  - chess_piece_sacrifice
+  - chess_piece_values_variation
+  - chess_opening_objective
+  - chess_piece_development_importance
+  - chess_board_center_control
+  - chess_piece_development_principles
+  - chess_center_principle
+  - chess_king_protection_importance
+  - chess_gambit_definition
+  - chess_board_space_control_benefits
+  - chess_threatening_moves_importance
+  - chess_piece_activity_principle
+  - chess_exchange_definition
+  - chess_castling_benefits
+  - chess_avoiding_wasted_moves
+  - chess_tactical_sacrifice_definition
+  - chess_double_threat_benefits
+  - chess_weakness_target_definition
+  - chess_game_planning_importance
+  - chess_endgame_definition
+  - chess_basic_pawn_endgame_ideas
+  - chess_en_passant_definition
+  - chess_position_evaluation_importance
+  - chess_pawn_structure_definition
+  - chess_unequal_pawn_structure_strategies
+  - chess_trap_definition
+  - chess_basic_rook_endgame_ideas
+  - chess_attack_plan_definition
+  - chess_defense_plan_definition
+  - chess_common_attack_techniques
+  - chess_passed_pawn_definition
+  - chess_common_opening_strategies
+
+responses:
+  utter_greet:
+    - text: Olá! Como posso ajudar?
+    - text: Olá! Estou aqui para responder às suas perguntas relacionadas a xadrez.
+    - text: Olá! É um prazer conversar com você.
+
+  utter_goodbye:
+    - text: Até logo! Tenha um bom dia.
+    - text: Tchau! Espero ter ajudado.
+    - text: Adeus! Volte sempre que precisar.
+
+  utter_affirm:
+    - text: Sim, com certeza!
+    - text: Com certeza, é isso mesmo!
+    - text: Sim, é isso aí!
+
+  utter_deny:
+    - text: Não, não é assim.
+    - text: Na verdade, não.
+    - text: Não concordo com isso.
+
+  utter_mood_great:
+    - text: Fico feliz em ouvir isso! Como posso ajudar ainda mais?
+    - text: Ótimo! Se precisar de mais informações, estou aqui para ajudar.
+    - text: Que bom que você está se sentindo bem! Como posso ser útil?
+
+  utter_mood_unhappy:
+    - text: Sinto muito em ouvir isso. Posso ajudar de alguma forma?
+    - text: Lamento que você esteja se sentindo assim. Estou aqui para ajudar se precisar.
+    - text: Espero que seu dia melhore em breve. Se precisar de suporte, estou aqui.
+
+  utter_bot_challenge:
+    - text: Sou um assistente virtual criado para ensinar xadrez. Como posso ajudar você hoje?
+    - text: Sou um bot projetado para ensinar xadrez. No que posso ajudar?
+    - text: Embora eu seja um programa de computador, estou aqui para ajudar. O que você precisa saber?
+
+  utter_chess_starting_pieces:
+    - text: No xadrez, cada jogador começa com 16 peças. São 8 peões e 8 outras peças, sendo 2 torres, 2 cavalos, 2 bispos, 1 rainha e 1 rei.images/start_position.png
+  utter_chess_most_important_piece:
+    - text: A peça mais importante do jogo de xadrez é o rei. O objetivo principal do jogo é proteger o rei e dar um xeque-mate no rei do oponente.
+
+  utter_chess_pawn_moves:
+    - text: O peão pode mover-se para frente uma casa, exceto no seu primeiro movimento, quando tem a opção de avançar duas casas. O peão captura peças inimigas na diagonal.images/pawn_move.png
+  utter_chess_rook_moves:
+    - text: A torre pode se mover em linha reta, tanto na vertical quanto na horizontal, por qualquer número de casas, desde que não haja outras peças bloqueando seu caminho.images/rook_move.png
+  utter_chess_bishop_moves:
+    - text: O bispo pode se mover na diagonal em qualquer direção por qualquer número de casas, desde que não haja outras peças bloqueando seu caminho.images/bishop_move.png
+  utter_chess_knight_moves:
+    - text: O cavalo tem um movimento especial em forma de "L". Ele pode se mover duas casas em uma direção (horizontal ou vertical) e, em seguida, uma casa perpendicularmente.
+
+  utter_chess_castling:
+    - text: O roque é um movimento especial no xadrez onde o rei e uma torre são movidos simultaneamente. Pode ser feito para o lado do rei (roque pequeno) ou para o lado da rainha (roque grande).images/castlings.png
+  utter_chess_castling_conditions:
+    - text: Para realizar o roque, as seguintes condições devem ser atendidas o rei e a torre não devem ter se movido anteriormente, não deve haver peças entre eles e o rei não deve estar em xeque.
+
+  utter_chess_king_moves:
+    - text: O rei pode mover-se para qualquer casa adjacente a ele (horizontalmente, verticalmente ou diagonalmente), desde que não coloque-se em xeque.
+
+  utter_chess_check:
+    - text: O xeque ocorre quando o rei de um jogador está sob ataque direto por uma ou mais peças do oponente. O jogador cujo rei está em xeque deve tomar medidas para escapar dele.images/check.png 
+  utter_chess_escape_check:
+    - text: Para escapar de um xeque, o jogador pode mover o rei para uma casa segura, capturar a peça que está dando o xeque ou bloquear o ataque com outra peça.
+
+  utter_chess_checkmate:
+    - text: O xeque-mate acontece quando o rei de um jogador está em xeque e não há nenhuma maneira de escapar ou bloquear o ataque. Isso resulta no fim do jogo e na vitória do oponente.
+
+  utter_chess_number_of_players:
+    - text: Uma partida de xadrez é jogada por dois jogadores. Cada jogador controla um conjunto de peças e tenta dar um xeque-mate no rei do oponente.
+
+  utter_chess_draw:
+    - text: Um empate em uma partida de xadrez pode ocorrer de várias maneiras por acordo mútuo, por repetição de movimentos, por falta de material para dar um xeque-mate ou por empate do relógio.
+
+  utter_chess_pawn_promotion:
+    - text: A promoção de peão ocorre quando um peão alcança a oitava fileira do tabuleiro. O peão pode ser promovido a qualquer outra peça, exceto o rei.images/passed.png
+  utter_chess_movement_rules:
+    - text: No xadrez, cada peça tem movimentos específicos, o objetivo é dar um xeque-mate no rei do oponente, e o jogador deve evitar movimentos que deixem seu próprio rei em xeque.
+
+  utter_chess_most_powerful_piece_value:
+    - text: No xadrez, o valor da peça mais poderosa é a rainha, que é geralmente considerada com um valor de 9 pontos.
+
+  utter_chess_pawn_value:
+    - text: Um peão no xadrez é geralmente avaliado em 1 ponto. No entanto, o valor das peças pode variar dependendo da posição no tabuleiro e da dinâmica do jogo.
+
+  utter_chess_knight_value:
+    - text: Um cavalo no xadrez é geralmente avaliado em 3 pontos. No entanto, como outras peças, seu valor pode variar dependendo das circunstâncias da partida.
+
+  utter_chess_rook_value:
+    - text: Uma torre no xadrez é geralmente avaliada em 5 pontos. Seu valor pode variar dependendo da posição no tabuleiro e das peças restantes.
+
+  utter_chess_bishop_value:
+    - text: Um bispo no xadrez é geralmente avaliado em 3 pontos. No entanto, assim como outras peças, seu valor pode ser influenciado pela posição no tabuleiro e pela estratégia do jogo.
+
+  utter_chess_king_value:
+    - text: O rei não tem um valor numérico atribuído, pois sua perda resulta no fim do jogo. No entanto, o rei é a peça mais importante e deve ser protegido durante a partida.
+
+  utter_chess_piece_values_impact:
+    - text: Os valores das peças no xadrez são importantes para avaliar trocas. Jogadores muitas vezes procuram obter uma vantagem material ao capturar peças de valor superior sem sacrificar suas próprias peças de forma imprudente.
+
+  utter_chess_piece_sacrifice:
+    - text: Sim, em certas situações estratégicas, os jogadores podem optar por sacrificar uma peça de valor maior em troca de uma vantagem posicional, controle do tabuleiro ou uma oportunidade de ataque mais forte.
+
+  utter_chess_piece_values_variation:
+    - text: Embora os valores padrão das peças sejam amplamente aceitos, em algumas variantes e variações do xadrez, os valores das peças podem ser diferentes ou até mesmo variáveis durante o jogo. É importante conhecer as regras específicas da variante que está sendo jogada.
+
+  utter_chess_opening_objective:
+    - text: "O objetivo principal da abertura no xadrez é estabelecer uma base sólida para o desenvolvimento das peças, garantir a segurança do rei e controlar o centro do tabuleiro."
+
+  utter_chess_piece_development_importance:
+    - text: "É importante desenvolver as peças no início do jogo para aumentar a mobilidade, criar ameaças e preparar-se para o meio e final do jogo. Peças bem desenvolvidas têm mais influência e poder no tabuleiro.images/piece_development.png"
+  utter_chess_board_center_control:
+    - text: "Controlar o centro do tabuleiro significa dominar as casas centrais (d4, d5, e4, e5) e ter uma presença ativa nessas áreas. Isso proporciona maior mobilidade, opções estratégicas e controle sobre a posição do oponente."
+
+  utter_chess_piece_development_principles:
+    - text: "Os princípios básicos de desenvolvimento das peças são: desenvolver as peças menores (cavalo e bispo) antes dos outros; evitar mover a mesma peça várias vezes; buscar posições harmoniosas e coordenadas para as peças; e manter a segurança do rei.images/piece_development.png"
+  utter_chess_center_principle:
+    - text: "O princípio do centro no xadrez refere-se à importância estratégica de controlar e ocupar as casas centrais do tabuleiro. O controle do centro oferece mais opções de mobilidade, influência sobre o tabuleiro e possibilidades táticas."
+
+  utter_chess_king_protection_importance:
+    - text: "Proteger o rei é de extrema importância no xadrez, pois o objetivo do jogo é dar xeque-mate no rei adversário. Negligenciar a segurança do rei pode levar a ataques devastadores e perda da partida.images/castlings.png"
+  utter_chess_gambit_definition:
+    - text: "Um gambito no xadrez é uma jogada em que um jogador sacrifica intencionalmente uma ou mais peças, geralmente peões, no início do jogo para obter benefícios estratégicos, como desenvolvimento rápido, controle do centro ou iniciativa.images/gambit.png"
+  utter_chess_board_space_control_benefits:
+    - text: "Controlar o espaço no tabuleiro de xadrez oferece várias vantagens estratégicas, como maior mobilidade das peças, restrição das peças adversárias, criação de pontos de apoio para ataques e defesa, e criação de oportunidades táticas."
+
+  utter_chess_threatening_moves_importance:
+    - text: "Fazer movimentos ameaçadores no xadrez é importante porque cria pressão sobre o oponente, força-o a reagir e restringe suas opções. Movimentos ameaçadores podem desestabilizar a posição adversária e criar oportunidades táticas."
+
+  utter_chess_piece_activity_principle:
+    - text: "O princípio da atividade das peças no xadrez enfatiza a importância de posicionar as peças de forma ativa e influente no tabuleiro. Peças ativas têm maior potencial de ataque, defesa e coordenação estratégica."
+
+  utter_chess_exchange_definition:
+    - text: "Uma troca no xadrez ocorre quando uma peça é capturada por outra peça adversária. As trocas podem ser estratégicas, visando obter vantagens posicionais, ou táticas, envolvendo combinações de captura de peças."
+
+  utter_chess_castling_benefits:
+    - text: "Realizar um roque no xadrez oferece benefícios importantes. Ele ajuda a proteger o rei, colocando-o em uma posição mais segura, e permite o rápido desenvolvimento da torre, conectando as torres e possibilitando a entrada no jogo intermediário com um rei mais protegido.images/castlings.png"
+  utter_chess_avoiding_wasted_moves:
+    - text: "Evitar movimentos desperdiçados no xadrez é crucial para maximizar a eficiência e a qualidade do jogo. Movimentos sem propósito podem desperdiçar tempo, enfraquecer a posição e fornecer oportunidades ao oponente."
+
+  utter_chess_tactical_sacrifice_definition:
+    - text: "Um sacrifício tático no xadrez ocorre quando um jogador intencionalmente sacrifica uma peça para obter vantagens táticas, como criar ameaças irresistíveis, ganhar material, abrir linhas ou enfraquecer a posição defensiva do oponente."
+
+  utter_chess_double_threat_benefits:
+    - text: "Criar ameaças duplas no xadrez oferece benefícios significativos. Uma ameaça dupla envolve atacar duas peças ou pontos vulneráveis ao mesmo tempo, forçando o oponente a fazer uma escolha difícil e criando oportunidades de ganhar material ou obter vantagens posicionais.images/double_attack.png"
+  utter_chess_weakness_target_definition:
+    - text: "Um alvo fraco no xadrez refere-se a um ponto, peça ou estrutura vulnerável na posição do oponente. Identificar e explorar esses pontos fracos é uma estratégia importante para criar pressão, ganhar material ou obter vantagens posicionais."
+
+  utter_chess_game_planning_importance:
+    - text: "Ter um plano de jogo no xadrez é essencial para orientar suas decisões estratégicas e táticas ao longo da partida. Um plano bem formulado ajuda a definir objetivos, criar direção e adaptar-se às mudanças na posição."
+
+  utter_chess_endgame_definition:
+    - text: "O final do jogo no xadrez refere-se à fase da partida em que a maioria das peças foi trocada e os reis têm um papel mais ativo. O final do jogo geralmente envolve a promoção de peões, criação de estratégias de mate e a utilização de habilidades técnicas para converter uma vantagem em vitória."
+
+  utter_chess_basic_pawn_endgame_ideas:
+    - text: "No final de peões no xadrez, algumas ideias básicas incluem a criação de peões passados, a formação de uma cadeia de peões para proteção mútua e a promoção de peões para obter uma vantagem decisiva. A atividade do rei também é fundamental para apoiar e promover os peões.images/passed.png"
+  utter_chess_en_passant_definition:
+    - text: "O en passant é uma regra especial do xadrez que permite a captura de um peão adversário que se moveu duas casas adiantes a partir de sua posição inicial. Essa captura só pode ser feita no próximo lance e é uma exceção à regra normal de movimento dos peões.images/en_passant.png"
+  utter_chess_position_evaluation_importance:
+    - text: "A avaliação da posição é de extrema importância no xadrez, pois permite que você entenda a situação atual do jogo, identifique pontos fortes e fracos, e tome decisões estratégicas e táticas informadas. A avaliação da posição leva em consideração fatores como a segurança do rei, controle do centro, estrutura de peões, atividade das peças e possibilidades táticas."
+
+  utter_chess_pawn_structure_definition:
+    - text: "A estrutura de peões no xadrez refere-se à disposição dos peões em um determinado momento do jogo. A estrutura de peões afeta a mobilidade das peças, cria alvos fracos e influencia a dinâmica posicional da partida. Existem diferentes tipos de estruturas de peões, como cadeias de peões, ilhas de peões e peões isolados.images/pawn_structure.png"
+  utter_chess_unequal_pawn_structure_strategies:
+    - text: "Quando você se depara com uma estrutura de peões desigual no xadrez, existem várias estratégias comuns que você pode considerar. Essas estratégias incluem o bloqueio de peões adversários, a criação de fraquezas na estrutura do oponente e o redirecionamento das peças para explorar as vulnerabilidades na posição do oponente.images/weakness.png"
+  utter_chess_trap_definition:
+    - text: "Uma clavada no xadrez refere-se a uma armadilha tática ou estratégica preparada por um jogador para enganar o oponente e obter vantagens. Existem vários tipos de clavadas, como clavadas de abertura, clavadas de peças e clavadas de mate, cada uma com seus próprios objetivos e métodos específicos."
+
+  utter_chess_basic_rook_endgame_ideas:
+    - text: "No final de torre no xadrez, algumas ideias básicas incluem a ativação do rei e da torre, a criação de ameaças de mate, a ocupação da sétima fileira e o uso da torre para capturar peões adversários. A coordenação entre o rei e a torre é fundamental para obter uma posição vantajosa."
+
+  utter_chess_attack_plan_definition:
+    - text: "Um plano de ataque no xadrez é uma estratégia elaborada para lançar um ataque direcionado contra o rei ou outras peças-chave do oponente. Um plano de ataque envolve a mobilização coordenada das peças, a criação de ameaças irresistíveis e a identificação de fraquezas na posição do oponente."
+
+  utter_chess_defense_plan_definition:
+    - text: "Um plano de defesa no xadrez é uma estratégia formulada para proteger o rei e as peças importantes de ataques do oponente. Um plano de defesa envolve a colocação adequada das peças, a criação de contra-ameaças e a identificação de recursos defensivos para manter a posição sólida."
+
+  utter_chess_common_attack_techniques:
+    - text: "Existem várias técnicas de ataque comuns no xadrez, incluindo a criação de ameaças duplas, clavadas, sobrecarga, desvio, sacrifícios táticos, quebra de estrutura de peões e o uso de peças ativas para atacar pontos fracos. Essas técnicas visam desestabilizar a posição do oponente e criar oportunidades táticas."
+
+  utter_chess_passed_pawn_definition:
+    - text: "Um peão passado é um peão que não pode ser bloqueado ou capturado por um peão adversário na mesma coluna. Eles têm um grande potencial de se tornarem peças poderosas, já que têm um caminho claro para avançar até a promoção. Aproveitar um peão passado pode ser uma estratégia importante no xadrez para criar ameaças e pressionar o oponente.images/passed.png"
+  utter_chess_common_opening_strategies:
+    - text: "Existem várias estratégias comuns de abertura no xadrez. Algumas delas incluem a Abertura Italiana, que se caracteriza pelos movimentos 1.e4 e 2.Nf3, visando controlar o centro do tabuleiro e desenvolver as peças rapidamente. Outra estratégia comum é a Defesa Siciliana, que ocorre após 1.e4 c5, e busca desafiar o controle branco do centro desde o início do jogo. Além disso, temos a Defesa Francesa, a Defesa Caro-Kann e muitas outras opções de aberturas. Cada estratégia tem suas próprias características e objetivos específicos."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
