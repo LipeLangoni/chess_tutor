@@ -1,0 +1,18 @@
+version: '1'
+
+services:
+  dev_container:
+    build:
+      context: .
+      dockerfile: dokcer\Dockerfile.dev
+    image: "tutor"
+    ports:
+      - "3000:3000"
+    container_name: "tutor"
+    tty: true
+    mem_limit: 20g
+    volumes:
+      - ./src:/root/app/src
+      - ./data:/root/app/data
+    environment:
+      - PYTHONPATH=${PYTHONPATH}:/root/data
